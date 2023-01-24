@@ -1,5 +1,6 @@
 package com.example.demo.uce.modelo;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -26,7 +27,7 @@ public class Ciudadano {
 	
 	//Indica que es una relacion de "uno a uno"
 	// Ciudadano es la clse principal
-	@OneToOne(mappedBy = "ciudadano") //Variable con el nombre con que se encuentra en la clase Empledao 
+	@OneToOne(mappedBy = "ciudadano", cascade = CascadeType.ALL) //Variable con el nombre con que se encuentra en la clase Empledao 
 	private Empleado empleado;
 	
 	
