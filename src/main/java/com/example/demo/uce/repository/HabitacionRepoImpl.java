@@ -2,6 +2,7 @@ package com.example.demo.uce.repository;
 
 import org.springframework.stereotype.Repository;
 
+import com.example.demo.uce.modelo.Habitacion;
 import com.example.demo.uce.modelo.Hotel;
 
 import jakarta.persistence.EntityManager;
@@ -10,40 +11,35 @@ import jakarta.transaction.Transactional;
 
 @Repository
 @Transactional
-public class HotelRepoImpl implements IHotelRepo {
+public class HabitacionRepoImpl implements IHabitacionRepo {
 
 	@PersistenceContext
 	private EntityManager entityManager;
 	
-	@Override
-	public void insertar(Hotel hotel) {
-		// TODO Auto-generated method stub
-		this.entityManager.persist(hotel);
-	}
-
-	@Override
-	public void actualizar(Hotel hotel) {
-		// TODO Auto-generated method stub
-		this.entityManager.merge(hotel);
-	}
-
-	@Override
-	public Hotel buscar(Integer id) {
-		// TODO Auto-generated method stub
-		Hotel h=this.entityManager.find(Hotel.class, id);
-		h.getHabitaciones().size();
-		return h;
-	}
 	
-	public Hotel buscarLigero(Integer id) {
+	@Override
+	public void insertar(Habitacion habitacion) {
 		// TODO Auto-generated method stub
-		Hotel h=this.entityManager.find(Hotel.class, id);
-		return h;
+		this.entityManager.persist(habitacion);
+	}
+
+	@Override
+	public void actualizar(Habitacion habitacion) {
+		// TODO Auto-generated method stub
+		this.entityManager.merge(habitacion);
+	}
+
+	@Override
+	public Habitacion buscar(Integer id) {
+		// TODO Auto-generated method stub
+		return this.entityManager.find(Habitacion.class, id);
 	}
 
 	@Override
 	public void eliminar(Integer id) {
 		// TODO Auto-generated method stub
+		//Habitacion h=this.buscar(id);
+//		h.setHotel(null);
 		this.entityManager.remove(this.buscar(id));
 	}
 

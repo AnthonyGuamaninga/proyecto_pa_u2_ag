@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.example.demo.uce.modelo.Habitacion;
 import com.example.demo.uce.modelo.Hotel;
+import com.example.demo.uce.service.IHabitacionService;
 import com.example.demo.uce.service.IHotelService;
 
 @SpringBootApplication
@@ -17,6 +18,8 @@ public class ProyectoPaU2Ag1Application implements CommandLineRunner{
 
 	@Autowired
 	private IHotelService hotelService;
+	@Autowired
+	private IHabitacionService habitacionService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoPaU2Ag1Application.class, args);
@@ -26,6 +29,7 @@ public class ProyectoPaU2Ag1Application implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		// INSERTAR Hotel (CREATE)
+		/*
 		Hotel hotel = new Hotel();
 		hotel.setNombre("Finlandia");
 		hotel.setDireccion("Amazonas");
@@ -46,7 +50,7 @@ public class ProyectoPaU2Ag1Application implements CommandLineRunner{
 		this.hotelService.registrar(hotel);
 		
 		// BUSCAR hotel (READ)
-		this.hotelService.buscar(1);
+		//this.hotelService.buscar(1);
 		
 		// ACTUALIZAR hotel (UPDATE)
 		Hotel hotelModificado = this.hotelService.buscar(1);
@@ -54,7 +58,30 @@ public class ProyectoPaU2Ag1Application implements CommandLineRunner{
 		//this.hotelService.modificar(hotelModificado);
 		
 		// ELIMINAR hotel (DELETE)
-		this.hotelService.eliminar(1);
+		//this.hotelService.eliminar(1);
+		
+		//---------------------------------------------------------------------
+		Habitacion habitacion3 =  new Habitacion();
+		habitacion3.setNumero("A24");
+		habitacion3.setHotel(hotel);
+		
+		//this.habitacionService.registrar(habitacion3);
+		
+		Habitacion habitacion4 = new Habitacion();
+
+		
+		habitacion4.setNumero("A04");
+
+		this.habitacionService.registrar(habitacion4, 1);
+		
+//		Hotel h =this.hotelService.buscar(1);
+//		List<Habitacion> lista=h.getHabitaciones();
+
+*/
+		
+		//this.habitacionService.eliminar(14);
+		
+		
 		
 	}
 
