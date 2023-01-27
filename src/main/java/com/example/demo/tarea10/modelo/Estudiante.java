@@ -1,4 +1,4 @@
-package com.example.demo.tarea9.modelo;
+package com.example.demo.tarea10.modelo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

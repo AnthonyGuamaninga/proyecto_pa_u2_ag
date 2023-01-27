@@ -1,10 +1,10 @@
-package com.example.demo.tarea9.service;
+package com.example.demo.tarea10.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.tarea9.modelo.Estudiante;
-import com.example.demo.tarea9.repository.IEstudianteRepo;
+import com.example.demo.tarea10.modelo.Estudiante;
+import com.example.demo.tarea10.repository.IEstudianteRepo;
 
 @Service
 public class EstudianteServiceImpl implements IEstudianteService {

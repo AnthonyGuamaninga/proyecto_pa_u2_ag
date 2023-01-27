@@ -1,4 +1,4 @@
-package com.example.demo.tarea10.modelo;
+package com.example.demo.tarea9.modelo;
 
 import java.time.LocalDateTime;
 
@@ -20,6 +20,7 @@ public class Identificacion {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "iden_seq")
 	@Column(name="iden_id")
 	private Integer id;
+	
 	@Column(name="iden_cedula")
 	private String cedula;
 	@Column(name="iden_nombre")

@@ -1,10 +1,10 @@
-package com.example.demo.tarea10.service;
+package com.example.demo.tarea9.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.tarea10.modelo.Identificacion;
-import com.example.demo.tarea10.repository.IIdentificacionRepo;
+import com.example.demo.tarea9.modelo.Identificacion;
+import com.example.demo.tarea9.repository.IIdentificacionRepo;
 
 @Service
 public class IdentificacionServiceImpl implements IIdentificacionService {
@@ -35,5 +35,4 @@ public class IdentificacionServiceImpl implements IIdentificacionService {
 		// TODO Auto-generated method stub
 		this.identificacionRepo.eliminar(id);
 	}
-
 }

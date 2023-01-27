@@ -1,6 +1,6 @@
-package com.example.demo.tarea10.service;
+package com.example.demo.tarea9.service;
 
-import com.example.demo.tarea10.modelo.Identificacion;
+import com.example.demo.tarea9.modelo.Identificacion;
 
 public interface IIdentificacionService {
 
@@ -8,5 +8,4 @@ public interface IIdentificacionService {
 	public void modificar(Identificacion identificacion);
 	public Identificacion buscar(Integer id);
 	public void eliminar(Integer id);
-	
 }

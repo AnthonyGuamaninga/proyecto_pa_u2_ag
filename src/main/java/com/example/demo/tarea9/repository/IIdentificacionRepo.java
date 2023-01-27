@@ -1,6 +1,6 @@
-package com.example.demo.tarea10.repository;
+package com.example.demo.tarea9.repository;
 
-import com.example.demo.tarea10.modelo.Identificacion;
+import com.example.demo.tarea9.modelo.Identificacion;
 
 public interface IIdentificacionRepo {
 	
@@ -9,4 +9,5 @@ public interface IIdentificacionRepo {
 	public Identificacion buscar(Integer id);
 	public void eliminar(Integer id);
 
+	
 }

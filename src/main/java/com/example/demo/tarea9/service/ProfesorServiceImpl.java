@@ -1,10 +1,10 @@
-package com.example.demo.tarea10.service;
+package com.example.demo.tarea9.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.tarea10.modelo.Profesor;
-import com.example.demo.tarea10.repository.IProfesorRepo;
+import com.example.demo.tarea9.modelo.Profesor;
+import com.example.demo.tarea9.repository.IProfesorRepo;
 @Service
 public class ProfesorServiceImpl implements IProfesorService {
 
@@ -34,5 +34,4 @@ public class ProfesorServiceImpl implements IProfesorService {
 		// TODO Auto-generated method stub
 		this.iProfesorRepo.eliminar(id);
 	}
-
 }

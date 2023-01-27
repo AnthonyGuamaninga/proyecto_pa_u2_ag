@@ -1,4 +1,4 @@
-package com.example.demo.tarea9.modelo;
+package com.example.demo.tarea10.modelo;
 
 import java.util.List;
 

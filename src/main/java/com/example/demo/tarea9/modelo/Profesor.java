@@ -1,4 +1,4 @@
-package com.example.demo.tarea10.modelo;
+package com.example.demo.tarea9.modelo;
 
 import java.math.BigDecimal;
 
@@ -22,6 +22,7 @@ public class Profesor {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "prof_seq")
 	@Column(name="prof_id")
 	private Integer id;
+	
 	@Column(name="prof_titulo")
 	private String titulo;
 	@Column(name="prof_salario")

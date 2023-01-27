@@ -1,35 +1,37 @@
-package com.example.demo.tarea10.repository;
+package com.example.demo.tarea9.repository;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.tarea10.modelo.Profesor;
+import com.example.demo.tarea9.modelo.Identificacion;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
+
 @Repository
 @Transactional
-public class ProfesorRepoImpl implements IProfesorRepo{
-
+public class IdentificacionRepoImpl implements IIdentificacionRepo {
+	
 	@PersistenceContext
 	private EntityManager entityManager;
 	
+	
 	@Override
-	public void insertar(Profesor profesor) {
+	public void insertar(Identificacion identificacion) {
 		// TODO Auto-generated method stub
-		this.entityManager.persist(profesor);
+		this.entityManager.persist(identificacion);
 	}
 
 	@Override
-	public void actualizar(Profesor profesor) {
+	public void actualizar(Identificacion identificacion) {
 		// TODO Auto-generated method stub
-		this.entityManager.merge(profesor);
+		this.entityManager.merge(identificacion);
 	}
 
 	@Override
-	public Profesor buscar(Integer id) {
+	public Identificacion buscar(Integer id) {
 		// TODO Auto-generated method stub
-		return this.entityManager.find(Profesor.class, id);
+		return this.entityManager.find(Identificacion.class, id);
 	}
 
 	@Override

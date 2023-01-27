@@ -1,6 +1,6 @@
-package com.example.demo.tarea9.repository;
+package com.example.demo.tarea10.repository;
 
-import com.example.demo.tarea9.modelo.Facultad;
+import com.example.demo.tarea10.modelo.Facultad;
 
 public interface IFacultadRepo {
 	

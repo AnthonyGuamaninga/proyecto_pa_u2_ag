@@ -9,9 +9,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.example.demo.tarea10.modelo.Identificacion;
-import com.example.demo.tarea10.modelo.Profesor;
-import com.example.demo.tarea10.service.IProfesorService;
+import com.example.demo.tarea9.modelo.Identificacion;
+import com.example.demo.tarea9.modelo.Profesor;
+import com.example.demo.tarea9.service.IProfesorService;
 
 @SpringBootApplication
 public class TareasPaU2AgApplication implements CommandLineRunner{

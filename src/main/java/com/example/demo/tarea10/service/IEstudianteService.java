@@ -1,6 +1,6 @@
-package com.example.demo.tarea9.service;
+package com.example.demo.tarea10.service;
 
-import com.example.demo.tarea9.modelo.Estudiante;
+import com.example.demo.tarea10.modelo.Estudiante;
 
 public interface IEstudianteService {
 	
