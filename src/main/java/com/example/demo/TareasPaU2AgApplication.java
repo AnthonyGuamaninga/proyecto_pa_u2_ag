@@ -26,6 +26,7 @@ public class TareasPaU2AgApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
+		// Entidad principal: Profesor
 		// Insertar
 		Profesor profesor = new Profesor();
 		profesor.setTitulo("Licenciado en Gastronomía");
