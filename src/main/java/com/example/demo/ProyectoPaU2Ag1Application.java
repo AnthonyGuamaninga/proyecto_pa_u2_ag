@@ -1,25 +1,28 @@
 package com.example.demo;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.example.demo.uce.modelo.Autor;
 import com.example.demo.uce.modelo.Habitacion;
 import com.example.demo.uce.modelo.Hotel;
+import com.example.demo.uce.modelo.Libro;
 import com.example.demo.uce.service.IHabitacionService;
 import com.example.demo.uce.service.IHotelService;
+import com.example.demo.uce.service.ILibroService;
 
 @SpringBootApplication
 public class ProyectoPaU2Ag1Application implements CommandLineRunner{
 
 	@Autowired
-	private IHotelService hotelService;
-	@Autowired
-	private IHabitacionService habitacionService;
+	private ILibroService iLibroService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoPaU2Ag1Application.class, args);
@@ -28,58 +31,28 @@ public class ProyectoPaU2Ag1Application implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		// INSERTAR Hotel (CREATE)
-		/*
-		Hotel hotel = new Hotel();
-		hotel.setNombre("Finlandia");
-		hotel.setDireccion("Amazonas");
+		// INSERTAR LIBRO
 		
-		Habitacion habitacion = new Habitacion();
-		habitacion.setNumero("A03");
-		habitacion.setHotel(hotel);
+		Libro libro = new Libro();
+		libro.setNombre("Análisis N");
+		libro.setEditorial("LEE");
 		
-		Habitacion habitacion2 = new Habitacion();
-		habitacion2.setNumero("A02");
-		habitacion2.setHotel(hotel);
+		Autor autor = new Autor();
+		autor.setNombre("O");
+		Autor autor2 = new Autor();
+		autor2.setNombre("D");
+		Autor autor3= new Autor();
+		autor3.setNombre("J");
 		
-		List<Habitacion> habitaciones= new ArrayList<>();
-		habitaciones.add(habitacion);
-		habitaciones.add(habitacion2);
 		
-		hotel.setHabitaciones(habitaciones);
-		this.hotelService.registrar(hotel);
+		Set<Autor> autores = new HashSet<>();
+		autores.add(autor);
+		autores.add(autor2);
+		autores.add(autor3);
 		
-		// BUSCAR hotel (READ)
-		//this.hotelService.buscar(1);
+		libro.setAutores(autores);
+		this.iLibroService.crear(libro);
 		
-		// ACTUALIZAR hotel (UPDATE)
-		Hotel hotelModificado = this.hotelService.buscar(1);
-		hotelModificado.setDireccion("Naciones Unidas");
-		//this.hotelService.modificar(hotelModificado);
-		
-		// ELIMINAR hotel (DELETE)
-		//this.hotelService.eliminar(1);
-		
-		//---------------------------------------------------------------------
-		Habitacion habitacion3 =  new Habitacion();
-		habitacion3.setNumero("A24");
-		habitacion3.setHotel(hotel);
-		
-		//this.habitacionService.registrar(habitacion3);
-		
-		Habitacion habitacion4 = new Habitacion();
-
-		
-		habitacion4.setNumero("A04");
-
-		this.habitacionService.registrar(habitacion4, 1);
-		
-//		Hotel h =this.hotelService.buscar(1);
-//		List<Habitacion> lista=h.getHabitaciones();
-
-*/
-		
-		//this.habitacionService.eliminar(14);
 		
 		
 		
